@@ -1,0 +1,68 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>2.&nbsp;&#26679;&#24335;&#27169;&#26495;</title><link rel="stylesheet" type="text/css" href="themes/default/style/style.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><style type="text/css">
+body { background-image: url('themes/default/style/draft.png');
+       background-repeat: no-repeat;
+       background-position: top left;
+       /* The following properties make the watermark "fixed" on the page. */
+       /* I think that's just a bit too distracting for the reader... */
+       /* background-attachment: fixed; */
+       /* background-position: center center; */
+     }</style><link rel="home" href="index.html" title="DocBook&#31616;&#35201;&#21442;&#32771;&#25163;&#20876;"><link rel="up" href="ch03.html" title="&#31532;&nbsp;3&nbsp;&#31456;&nbsp;&#26679;&#24335;&#23450;&#20041;"><link rel="prev" href="ch03.html" title="&#31532;&nbsp;3&nbsp;&#31456;&nbsp;&#26679;&#24335;&#23450;&#20041;"><link rel="next" href="ch04.html" title="&#31532;&nbsp;4&nbsp;&#31456;&nbsp;&#23383;&#20307;"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">2.&nbsp;&#26679;&#24335;&#27169;&#26495;</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch03.html"><img src="themes/default/navig/prev.png" alt="&#19978;&#19968;&#39029;"></a>&nbsp;</td><th width="60%" align="center">&#31532;&nbsp;3&nbsp;&#31456;&nbsp;&#26679;&#24335;&#23450;&#20041;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ch04.html"><img src="themes/default/navig/next.png" alt="&#19979;&#19968;&#39029;"></a></td></tr></table></div><div class="sect1"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e1372"></a>2.&nbsp;&#26679;&#24335;&#27169;&#26495;</h2></div></div></div><p>&#26679;&#24335;&#34920;&#30340;&#35774;&#23450;&#38500;&#20102;&#21069;&#38754;&#30340;&#21442;&#25968;&#20462;&#25913;&#20197;&#22806;&#65292;&#36824;&#26377;&#19968;&#20123;&#38656;&#35201;&#20462;&#25913;&#27169;&#26495;&#65292;&#27604;&#22914;&#8220;titlepage&#8221;&#36825;&#20010;&#37096;&#20998;&#65292;&#22312;&#26631;&#39064;&#39029;&#19978;&#26174;&#31034;&#21738;&#20123;&#20869;&#23481;&#12289;&#29992;&#20160;&#20040;&#26679;&#30340;&#26679;&#24335;&#26469;&#26174;&#31034;&#65292;&#37117;&#38656;&#35201;&#37325;&#26032;&#23450;&#20041;&#25110;&#20462;&#25913;&#30456;&#24212;&#30340;&#27169;&#26495;&#65292;&#32780;&#38750;&#20165;&#20165;&#35843;&#25972;&#20960;&#20010;&#21442;&#25968;&#12290;&#22312;&#36825;&#20010;&#37096;&#20998;&#25105;&#20204;&#20165;&#20171;&#32461;titlepage&#30340;&#23450;&#20041;&#26041;&#27861;&#12290;</p><p>titlepage&#65292;&#23601;&#26159;&#26631;&#39064;&#39029;&#12290;&#27604;&#22914;book&#30340;titlepage&#65292;&#23601;&#20687;&#36825;&#26412;&#20070;&#65292;&#23427;&#26377;&#20070;&#30340;&#8220;&#21491;&#39029;&#65288;recto&#65292;&#21487;&#20197;&#21521;&#24038;&#32763;&#65289;&#8221;&#65292;&#25105;&#21482;&#35753;&#23427;&#26174;&#31034;&#26631;&#39064;&#12289;&#21103;&#26631;&#39064;&#21450;&#20316;&#32773;&#65307;&#36824;&#26377;&#8220;&#24038;&#39029;&#65288;verso&#65289;&#8221;&#65292;&#36825;&#19978;&#38754;&#26174;&#31034;&#30340;&#20449;&#24687;&#35201;&#22810;&#19968;&#20123;&#65292;&#36824;&#21253;&#25324;&#29256;&#26412;&#20449;&#24687;&#12289;&#25688;&#35201;&#12289;&#29256;&#26435;&#20449;&#24687;&#31561;&#12290;&#35201;&#23450;&#20041;&#36825;&#20010;&#27169;&#26495;&#65292;&#38656;&#35201;&#19977;&#27493;&#65306;</p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><span class="emphasis"><em>&#20462;&#25913; titlepage.templates.xml</em></span><p><code class="filename">titlepage.templates.xml</code>&#23601;&#26159;titlepage&#30340;&#27169;&#26495;&#25991;&#20214;&#65292;&#36825;&#20010;&#25991;&#20214;&#22312;&#30446;&#24405;<code class="filename">docbook-xsl-1.79.1/fo</code>&#19979;&#38754;&#12290;&#39318;&#20808;&#25105;&#20204;&#38656;&#35201;&#23545;&#37324;&#38754;&#30340;&#8220;book&#8221;&#37096;&#20998;&#36827;&#34892;&#20462;&#25913;&#65292;&#20462;&#25913;&#25104;&#22914;&#19979;&#30340;&#26679;&#23376;&#65306;</p><pre class="programlisting">&nbsp;&nbsp;1 &lt;t:titlepage t:element="book" t:wrapper="fo:block"&gt;
+&nbsp;&nbsp;2     &lt;t:titlepage-content t:side="recto"&gt;
+&nbsp;&nbsp;3       &lt;mediaobject/&gt;
+&nbsp;&nbsp;4       &lt;title
+&nbsp;&nbsp;5              t:named-template="division.title"
+&nbsp;&nbsp;6              param:node="ancestor-or-self::book[1]"
+&nbsp;&nbsp;7              text-align="left"
+&nbsp;&nbsp;8              font-size="&amp;hsize5;"
+&nbsp;&nbsp;9              space-before="&amp;hsize5space;"
+&nbsp;10              font-weight="normal"
+&nbsp;11              font-family="{$title.fontset}"/&gt;      
+&nbsp;12       &lt;subtitle
+&nbsp;13              text-align="left"
+&nbsp;14              font-size="&amp;hsize2;"
+&nbsp;15              font-weight="normal"
+&nbsp;16              space-before="&amp;hsize4space;"
+&nbsp;17              font-family="{$title.fontset}"/&gt;  
+&nbsp;18       &lt;corpauthor font-size="&amp;hsize0;"
+&nbsp;19              text-align="left"
+&nbsp;20              font-weight="normal" 
+&nbsp;21              keep-with-next.within-column="always"
+&nbsp;22              space-before="2in"/&gt;  
+&nbsp;23       &lt;authorgroup space-before="2in"/&gt;
+&nbsp;24       &lt;author font-size="&amp;hsize0;"
+&nbsp;25              text-align="left"
+&nbsp;26              font-weight="normal" 
+&nbsp;27              space-before="&amp;hsize2space;"
+&nbsp;28              keep-with-next.within-column="always"/&gt; 
+&nbsp;29       &lt;itermset/&gt;
+&nbsp;30     &lt;/t:titlepage-content&gt;
+&nbsp;31 
+&nbsp;32   &lt;t:titlepage-content t:side="verso"&gt;
+&nbsp;33       &lt;title
+&nbsp;34              t:named-template="book.verso.title"
+&nbsp;35              font-size="&amp;hsize2;"
+&nbsp;36              font-weight="bold"
+&nbsp;37              font-family="{$title.fontset}"/&gt;
+&nbsp;38       &lt;corpauthor/&gt;
+&nbsp;39       &lt;authorgroup t:named-template="verso.authorgroup"/&gt;
+&nbsp;40       &lt;author/&gt;
+&nbsp;41 
+&nbsp;42       &lt;othercredit/&gt;
+&nbsp;43       &lt;copyright/&gt;
+&nbsp;44       &lt;pubdate/&gt; 
+&nbsp;45       &lt;releaseinfo/&gt;         
+&nbsp;46       &lt;revhistory/&gt;       
+&nbsp;47       &lt;abstract/&gt;
+&nbsp;48       &lt;legalnotice font-size="7pt" background-color="#f5f5f5" space-before="1em"/&gt;
+&nbsp;49   &lt;/t:titlepage-content&gt;
+&nbsp;50   &lt;t:titlepage-separator&gt;
+&nbsp;51       &lt;fo:block break-after="page"/&gt;
+&nbsp;52   &lt;/t:titlepage-separator&gt;
+&nbsp;53   &lt;t:titlepage-before t:side="recto"&gt;
+&nbsp;54   &lt;/t:titlepage-before&gt;
+&nbsp;55   &lt;t:titlepage-before t:side="verso"&gt;
+&nbsp;56       &lt;fo:block break-after="page"/&gt;
+&nbsp;57   &lt;/t:titlepage-before&gt;
+&nbsp;58 &lt;/t:titlepage&gt;</pre><p>&#19978;&#38754;&#30340;&#20195;&#30721;&#34429;&#28982;&#26377;&#28857;&#38271;&#65292;&#20294;&#24456;&#23481;&#26131;&#38405;&#35835;&#65292;&#22522;&#26412;&#23601;&#35828;&#20102;&#20004;&#20010;&#20107;&#65306;&#22312;recto&#25110;verso&#39029;&#19978;&#26174;&#31034;&#21738;&#20123;&#20869;&#23481;&#12289;&#29992;&#20160;&#20040;&#26679;&#30340;&#26679;&#24335;&#26174;&#31034;&#12290;</p></li><li class="listitem"><span class="emphasis"><em>&#29983;&#25104;&#27169;&#26495;&#25991;&#20214;</em></span><p>&#27169;&#26495;&#25991;&#20214;&#30340;&#29983;&#25104;&#38656;&#35201;&#21018;&#25165;&#20462;&#25913;&#36807;&#30340;<code class="filename">titlepage.templates.xml</code>&#25991;&#20214;&#65292;&#21450;<code class="filename">docbook-xsl-1.79.1/template/titlepage.xsl</code>&#25991;&#20214;&#65292;&#36824;&#38656;&#35201;<span class="command"><strong>xsltproc</strong></span>&#36825;&#20010;&#21629;&#20196;&#12290;&#20808;&#23558;<code class="filename">titlpage.templates.xsl</code>&#20570;&#22791;&#20221;&#20445;&#23384;&#65292;&#28982;&#21518;&#25191;&#34892;&#22914;&#19979;&#30340;&#21629;&#20196;&#65306;</p><pre class="screen">xsltproc --output titlepage.templates.xsl template/titlepage.xsl titlepage.templates.xml</pre><p>&#36825;&#26679;&#65292;&#26032;&#30340;<code class="filename">titlepage.templates.xsl</code>&#25991;&#20214;&#23601;&#29983;&#25104;&#20102;&#12290;</p><p>&#25105;&#24635;&#24863;&#35273;&#36825;&#37324;&#26377;&#28857;&#22855;&#24618;&#65292;&#29992;xsl&#29983;&#25104;xsl&#65311; &#20294;docbook&#23448;&#26041;&#23601;&#26159;&#36825;&#20040;&#23450;&#20041;&#30340;&#12290;</p><p>&#38500;&#20102;titlepage&#22806;&#65292;inline&#21644;pagesetup&#20063;&#38656;&#35201;&#23450;&#20041;&#27169;&#26495;&#65292;&#20294;&#19981;&#29992;&#20462;&#25913;xml&#25991;&#20214;&#20102;&#65292;&#21487;&#20197;&#21442;&#32771;<code class="filename">fo/inline.xsl<code class="filename">&#21644;</code>fo/pagesetup.xsl</code>&#25991;&#20214;&#21644;&#21069;&#38754;&#25552;&#21040;&#30340;&#30456;&#20851;&#31449;&#28857;&#12290;</p></li></ol></div></div><div class="navfooter"><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch03.html"><img src="themes/default/navig/prev.png" alt="&#19978;&#19968;&#39029;"></a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="ch03.html"><img src="themes/default/navig/up.png" alt="&#19978;&#19968;&#32423;"></a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="ch04.html"><img src="themes/default/navig/next.png" alt="&#19979;&#19968;&#39029;"></a></td></tr><tr><td width="40%" align="left" valign="top">&#31532;&nbsp;3&nbsp;&#31456;&nbsp;&#26679;&#24335;&#23450;&#20041;&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html"><img src="themes/default/navig/home.png" alt="&#36215;&#22987;&#39029;"></a></td><td width="40%" align="right" valign="top">&nbsp;&#31532;&nbsp;4&nbsp;&#31456;&nbsp;&#23383;&#20307;</td></tr></table></div></body></html>

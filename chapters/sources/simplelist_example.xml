@@ -1,0 +1,10 @@
+<simplelist type='vert' columns='3'>
+    <member>bibliolist</member>
+    <member>calloutlist</member>
+    <member>glosslist</member>
+    <member>itemizedlis</member>
+    <member>orderedlist</member>
+    <member>segmentedlist</member>
+    <member>simplelist</member>
+    <member>variablelist</member>
+</simplelist>      

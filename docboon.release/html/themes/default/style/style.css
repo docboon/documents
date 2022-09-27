@@ -1,0 +1,385 @@
+/*
+* Original version created for the dcux.com documentation team
+
+	
+ */
+/* 6d4c07 */
+.navheader {
+	font-family: SimSun, sans-serif;
+	background-color: #dcdbdc;
+	font-size: 20px;
+	border-top: 9px solid #dcdbdc;
+	border-bottom: 12px solid #fe5000;
+	border-radius :12px 12px 0px 0px;
+}
+
+.navheader th {
+        font-family: SimSun, sans-serif;
+        background-color: #dcdbdc; /*  DDDDDD*/
+	color:#000;
+        font-size: 12px;
+}
+
+.navheader td {
+        font-family: SimSun, sans-serif;
+        background-color: #dcdbdc;
+        font-size: 12px;
+}
+
+
+.navfooter {
+	font-family: SimSun, sans-serif;
+	font-size: 12px;
+	background-color: #dcdbdc;
+        border-top: 9px solid #E86746;
+        border-bottom: 0px solid #dcdbdc;
+        border-radius:0px 0px 12px 12px;
+
+}
+
+
+.navfooter th {
+        font-family: SimSun, sans-serif;
+        background-color: #dcdbdc;
+        font-size: 12px;
+}
+
+.navfooter td {
+        font-family: SimSun, sans-serif;
+        background-color: #dcdbdc;
+	color:#000;
+        font-size: 12px;
+}
+
+.tip {font-size:12px;
+	background-color: #dcdbdc;
+	border-radius:8px;	
+}
+.tip th {font-size:12px;}
+.tip td {font-size:12px;}
+
+.note {font-size:12px;
+	background-color: #dcdbdc;
+	border-radius:8px;
+}
+.note th {font-size:12px;}
+.note td {font-size:12px;}
+
+
+.caution {font-size:12px;
+	background-color: #dcdbdc;
+	border-radius:8px;
+}
+.caution th {font-size:12px;}
+.caution td {font-size:12px;}
+
+.important {
+	font-size:12px;
+	background-color: #dcdbdc;
+	border-radius:8px;
+}
+.important table {
+	font-size:12px;
+}
+.important th {
+	font-size:12px;
+}
+.important td {
+	font-size:12px;
+}
+
+.warning {font-size:12px;
+	background-color: #dcdbdc;
+	border-radius:8px;
+}
+.warning th {font-size:12px;}
+.warning td {font-size:12px;}
+
+p.copyright {
+	font-size:12px;
+	color:#888888;
+}
+
+html {
+	background: #ffffff;
+        color:#000000;
+        font-family: SimSun, Verdana, Lucida, Helvetica, Arial, sans-serif;
+        font-size: 13px;
+}
+
+body {
+	background-image:url(./images/logo.png); 
+	background-position: bottom right; 
+	background-repeat:no-repeat;
+
+	
+	margin: 52px;
+	margin-top: 10px;
+	padding:10px;
+	/* border:1px solid #363636; */
+	border-radius:18px;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+}
+p {
+	line-height:160%;
+}
+
+ul {
+	margin-left: 5px;
+}
+
+.orderedlist {
+	margin-left: 10px;
+}
+
+.titlepage {
+  padding-right: 0em;
+}
+.title {
+	font-size: 28px;
+	font-weight:bold;
+}
+
+div.toc dt { 
+  margin-top: 8px; 
+}
+
+div.toc {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+div.toc dt :visited { 
+	color: #3465A6; /* Ubuntu visited link color */
+}
+
+div.toc .part {
+	padding-top:2px;
+	background-color:#fff;
+	font-size:16px;
+	font-weight:bold;
+}
+
+div.qandaset dt :visited { 
+	color: black; /* Ubuntu visited link color */
+}
+
+:link { 
+	color: #6d4307; /* dark brown */
+}
+
+:visited { 
+	color: #3465A6; /* dark brown */
+}
+
+dl { 
+  margin-top: 0em; 
+  margin-bottom: 0.5em; 
+}
+
+dt { 
+  margin-top: 1em; 
+}
+
+div.qandaset {
+	margin-left: 1em;
+}
+
+.guimenu, .guimenuitem, .guisubmenu {
+	font-style: italic;
+	color: #6d4307; /* dark brown */
+}
+
+.guilabel, .guibutton { 
+}
+
+.qandaset td {
+  padding-top:10px;  
+}
+.question {
+  /*background-color: #EBEBEB; */
+  font-size: 12px;
+  font-weight: bold; 
+}
+
+.answer {
+  font-size: 12px;
+}
+
+
+
+/* accelerator keys in menus */
+.accel { 
+  text-decoration: underline;
+}
+
+h1
+{
+        margin: 1.5em 0 0 0;
+        font-weight: bold;
+	font-size: 20px; 
+        color: #000000; /* ubuntu dark brown */
+        line-height: 1.2em;
+
+}	
+
+
+h2, h3, h4, h5, h6
+{
+        font-weight: normal; 
+        color: #6d4c07; /* ubuntu dark brown */
+        line-height: 1.2em;
+}	
+
+
+h2.title
+{
+        font-weight: bold;
+        font-size: 22px;
+	color:#000000;
+	border-bottom: 1px solid #DDDDDD;  /* under line cxlee*/
+}
+
+
+h2
+{
+        font-size: 1.8empx;
+	border-bottom: 1px solid #DDDDDD;  /* under line cxlee*/
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5, h6 {font-size: 1em;}
+
+.programlisting { 
+	font-size: 12px;
+	background-color: #dcdbdc; /* #f0eee6;  light salmon   //ebf3fb*/
+	border: 1pt solid #DDDDDD; /*#338ba6;  dark tan  aaccee */
+	padding: 5px; 
+	border-radius:8px;
+} 
+
+.screen {
+	font-size: 12px;
+        color: #FFFFFF;
+	background-color: #000000; /* #f0eee6;  light salmon */ 
+	border: 5pt solid #EDE9E3; /*#338ba6;  dark tan */
+	padding: 5px; 
+	border-radius:8px;
+}
+
+.revhistory { 
+	font-size: 12px;
+	background-color: #D8D8D8; 
+	font-weight: bold; 
+	color: #000000;
+	margin: 0;
+}
+
+.revhistory table {
+        font-size: 12px;
+        border: 0px solid #338ba6;
+	border-style:solid;
+}
+.revhistory th {
+	height:20px;
+        font-size: 12px;
+        border: 0px solid #338ba6;
+	border-style:solid;
+}
+
+
+.revhistory td {
+        font-size: 12px;
+	height:19px;
+        border: 0px solid #338ba6;
+	background-color: #FFFFFF;  
+	color: #000000;
+}
+.table-contents th {
+	background-color:#D8D8D8;
+}
+
+.table .title {
+	font-size :12px;
+	color :#808080;
+}
+.emphasis {
+        font-style:normal;
+        font-size:110%;
+	font-weight: bold;
+}
+
+em {
+	font-style:normal;
+}
+.filename {
+	font-weight:bold;
+	color: #000088;
+}
+#sisternav {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+
+#sisternav ul {
+	display:inline;
+	margin:0;
+	padding:10px 10px 0 1px;
+	list-style:none;
+}
+                  
+#sisternav li {
+	display:inline;
+	float:left;
+	background:url(img/tab_off_ns1.png) no-repeat left top;
+	margin:0;
+	padding:0 0 0 5px;
+}
+
+#sisternav a {
+	float:left;
+	font-size:0.8em;
+	display:block;
+	background:url(img/tab_off_ns2.png) no-repeat right top;
+	padding:8px 15px 3px 8px;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#sisternav a {float:none;}
+/* End IE5-Mac hack */
+
+#sisternav li:hover, #sisternav li:hover a {
+	background-position:0% -163px;
+}
+
+#sisternav li:hover a {
+	background-position:100% -163px;
+}
+
+
+#sisternav a , #sisternav #current a { color: #444; }
+#sisternav #current a:hover, #sisternav li a:hover { color: black;}
+
+.function {
+	font-size :12px;
+	color : blue;
+}
+
+.figure .title {
+	font-size :12px;
+	color :#808080;
+}
